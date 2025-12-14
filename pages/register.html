@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="NeuroTrack - Post-Stroke Rehabilitation Registration">
+    <title>Register | NeuroTrack</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/auth.css">
+</head>
+<body>
+    <div class="auth-shell">
+        <!-- LEFT PANEL: Hero Section -->
+        <aside class="auth-hero" role="complementary" aria-label="Brand information">
+            <div class="auth-hero__layer">
+                <p class="auth-hero__welcome">Welcome to</p>
+                <h1 class="auth-hero__title">Neuro Track</h1>
+                <p class="auth-hero__body">
+                    Every small step you take today is a valuable investment in your future. Keep believing in the process, because healing begins with a strong determination.
+                </p>
+                <div class="auth-hero__stats">
+                    <div>
+                        <div class="stat-value">2500+</div>
+                        <div class="stat-label">Active patients</div>
+                    </div>
+                    <div>
+                        <div class="stat-value">90+</div>
+                        <div class="stat-label">Professional Doctors</div>
+                    </div>
+                    <div>
+                        <div class="stat-value">24/7</div>
+                        <div class="stat-label">Care monitoring</div>
+                    </div>
+                </div>
+            </div>
+        </aside>
+
+        <!-- RIGHT PANEL: Registration Form -->
+        <main class="auth-panel" role="main">
+            <div class="auth-card" id="registerCard">
+                <header class="auth-card__header">
+                    <h2>Create Your Account</h2>
+                </header>
+
+                <form class="auth-form" id="registerForm" novalidate aria-label="Registration form">
+                    <!-- Role Selection Dropdown -->
+                    <label class="auth-field">
+                        <span>Role<span class="required-star">*</span></span>
+                        <select 
+                            id="registerRole" 
+                            name="role"
+                            aria-required="true"
+                            aria-describedby="registerRoleError"
+                            required
+                        >
+                            <option value="">Select your role</option>
+                            <option value="patient" selected>Patient</option>
+                            <option value="doctor">Doctor</option>
+                            <option value="physio">Physiotherapist</option>
+                        </select>
+                        <small class="auth-error" id="registerRoleError" role="alert"></small>
+                    </label>
+
+                    <!-- Common Fields -->
+                    <label class="auth-field">
+                        <span>Full name<span class="required-star">*</span></span>
+                        <input 
+                            type="text" 
+                            id="registerName"
+                            name="fullName"
+                            autocomplete="name"
+                            placeholder="John Doe"
+                            aria-required="true"
+                            aria-describedby="nameError"
+                            required
+                        >
+                        <small class="auth-error" id="nameError" role="alert"></small>
+                    </label>
+
+                    <label class="auth-field">
+                        <span>Email<span class="required-star">*</span></span>
+                        <input 
+                            type="email" 
+                            id="registerEmail"
+                            name="email"
+                            inputmode="email"
+                            autocomplete="email"
+                            placeholder="you@example.com"
+                            aria-required="true"
+                            aria-describedby="registerEmailError"
+                            required
+                        >
+                        <small class="auth-error" id="registerEmailError" role="alert"></small>
+                    </label>
+
+                    <!-- Password Grid (2 columns on desktop) -->
+                    <div class="auth-grid">
+                        <label class="auth-field">
+                            <span>Password<span class="required-star">*</span></span>
+                            <div class="auth-field__input-group">
+                                <input 
+                                    type="password" 
+                                    id="registerPassword"
+                                    name="password"
+                                    autocomplete="new-password"
+                                    placeholder="••••••••"
+                                    aria-required="true"
+                                    aria-describedby="registerPasswordError"
+                                    required
+                                >
+                                <button 
+                                    type="button" 
+                                    class="auth-field__toggle" 
+                                    aria-label="Toggle password visibility"
+                                    data-toggle-password="registerPassword"
+                                >
+                                    <svg width="20" height="20" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
+                                        <path d="M10 12a2 2 0 100-4 2 2 0 000 4z"/>
+                                        <path fill-rule="evenodd" d="M.458 10C1.732 5.943 5.522 3 10 3s8.268 2.943 9.542 7c-1.274 4.057-5.064 7-9.542 7S1.732 14.057.458 10zM14 10a4 4 0 11-8 0 4 4 0 018 0z" clip-rule="evenodd"/>
+                                    </svg>
+                                </button>
+                            </div>
+                            <small class="auth-error" id="registerPasswordError" role="alert"></small>
+                        </label>
+
+                        <label class="auth-field">
+                            <span>Confirm password<span class="required-star">*</span></span>
+                            <div class="auth-field__input-group">
+                                <input 
+                                    type="password" 
+                                    id="confirmPassword"
+                                    name="confirmPassword"
+                                    autocomplete="new-password"
+                                    placeholder="••••••••"
+                                    aria-required="true"
+                                    aria-describedby="confirmPasswordError"
+                                    required
+                                >
+                                <button 
+                                    type="button" 
+                                    class="auth-field__toggle" 
+                                    aria-label="Toggle password visibility"
+                                    data-toggle-password="confirmPassword"
+                                >
+                                    <svg width="20" height="20" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
+                                        <path d="M10 12a2 2 0 100-4 2 2 0 000 4z"/>
+                                        <path fill-rule="evenodd" d="M.458 10C1.732 5.943 5.522 3 10 3s8.268 2.943 9.542 7c-1.274 4.057-5.064 7-9.542 7S1.732 14.057.458 10zM14 10a4 4 0 11-8 0 4 4 0 018 0z" clip-rule="evenodd"/>
+                                    </svg>
+                                </button>
+                            </div>
+                            <small class="auth-error" id="confirmPasswordError" role="alert"></small>
+                        </label>
+                    </div>
+
+                    <!-- DYNAMIC ROLE-SPECIFIC FIELDS -->
+                    <div id="roleSpecificFields">
+                        <!-- Patient Fields (Default) -->
+                        <div class="role-fields" id="patientFields">
+                            <label class="auth-field">
+                                <span>Date of Birth<span class="required-star">*</span></span>
+                                <input 
+                                    type="date" 
+                                    id="dateOfBirth"
+                                    name="dateOfBirth"
+                                    autocomplete="bday"
+                                    aria-required="true"
+                                    aria-describedby="dobError"
+                                    required
+                                >
+                                <small class="auth-error" id="dobError" role="alert"></small>
+                            </label>
+
+                            <label class="auth-field">
+                                <span>Medical Record Number<span class="required-star">*</span></span>
+                                <input 
+                                    type="text" 
+                                    id="medicalRecordNumber"
+                                    name="medicalRecordNumber"
+                                    placeholder="MRN-123456"
+                                    aria-required="true"
+                                    aria-describedby="mrnError"
+                                    required
+                                >
+                                <small class="auth-error" id="mrnError" role="alert"></small>
+                            </label>
+                        </div>
+
+                        <!-- Doctor Fields (Hidden by default) -->
+                        <div class="role-fields" id="doctorFields" style="display: none;">
+                            <label class="auth-field">
+                                <span>Medical License ID<span class="required-star">*</span></span>
+                                <input 
+                                    type="text" 
+                                    id="licenseId"
+                                    name="licenseId"
+                                    placeholder="MD-123456"
+                                    aria-required="true"
+                                    aria-describedby="licenseError"
+                                >
+                                <small class="auth-error" id="licenseError" role="alert"></small>
+                            </label>
+
+                            <label class="auth-field">
+                                <span>Specialization<span class="required-star">*</span></span>
+                                <select 
+                                    id="specialization"
+                                    name="specialization"
+                                    aria-required="true"
+                                    aria-describedby="specializationError"
+                                >
+                                    <option value="">Select specialization</option>
+                                    <option value="neurology">Neurology</option>
+                                    <option value="rehabilitation">Rehabilitation Medicine</option>
+                                    <option value="stroke">Stroke Care</option>
+                                    <option value="physical">Physical Medicine</option>
+                                </select>
+                                <small class="auth-error" id="specializationError" role="alert"></small>
+                            </label>
+
+                            <label class="auth-field">
+                                <span>Hospital Affiliation<span class="required-star">*</span></span>
+                                <input 
+                                    type="text" 
+                                    id="hospitalAffiliation"
+                                    name="hospitalAffiliation"
+                                    placeholder="General Hospital"
+                                    aria-required="true"
+                                    aria-describedby="hospitalError"
+                                >
+                                <small class="auth-error" id="hospitalError" role="alert"></small>
+                            </label>
+                        </div>
+
+                        <!-- Physiotherapist Fields (Hidden by default) -->
+                        <div class="role-fields" id="physioFields" style="display: none;">
+                            <label class="auth-field">
+                                <span>Certification Level<span class="required-star">*</span></span>
+                                <select 
+                                    id="certificationLevel"
+                                    name="certificationLevel"
+                                    aria-required="true"
+                                    aria-describedby="certError"
+                                >
+                                    <option value="">Select certification</option>
+                                    <option value="RPT">Registered Physical Therapist (RPT)</option>
+                                    <option value="NCS">Neurologic Clinical Specialist (NCS)</option>
+                                    <option value="PCS">Pediatric Clinical Specialist (PCS)</option>
+                                    <option value="SCS">Sports Clinical Specialist (SCS)</option>
+                                </select>
+                                <small class="auth-error" id="certError" role="alert"></small>
+                            </label>
+
+                            <label class="auth-field">
+                                <span>Assigned Region<span class="required-star">*</span></span>
+                                <select 
+                                    id="assignedRegion"
+                                    name="assignedRegion"
+                                    aria-required="true"
+                                    aria-describedby="regionError"
+                                >
+                                    <option value="">Select region</option>
+                                    <option value="north">North</option>
+                                    <option value="south">South</option>
+                                    <option value="east">East</option>
+                                    <option value="west">West</option>
+                                    <option value="central">Central</option>
+                                    <option value="coastal">Coastal</option>
+                                    <option value="metro">Metro</option>
+                                    <option value="rural">Rural</option>
+                                </select>
+                                <small class="auth-error" id="regionError" role="alert"></small>
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Terms & Conditions -->
+                    <label class="auth-checkbox auth-checkbox--block">
+                        <input type="checkbox" id="termsAccepted" name="termsAccepted" required>
+                        <span>I agree to the <a href="#" class="auth-link">Terms of Service</a> and <a href="#" class="auth-link">Privacy Policy</a></span>
+                    </label>
+                    <small class="auth-error" id="termsError" role="alert"></small>
+
+                    <!-- Submit Button -->
+                    <button type="submit" class="auth-button" id="registerBtn">
+                        <span class="auth-button__text">Create Account</span>
+                        <span class="auth-button__loader" aria-hidden="true"></span>
+                    </button>
+
+                    <!-- Switch to Login -->
+                    <p class="auth-switch">
+                        Already have an account? <a href="./login.html" class="auth-link">Sign in</a>
+                    </p>
+                </form>
+            </div>
+        </main>
+    </div>
+
+    <script src="../assets/js/mock-auth.js"></script>
+</body>
+</html>

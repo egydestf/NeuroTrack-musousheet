@@ -1,0 +1,255 @@
+{
+  "_meta": {
+    "version": "1.0",
+    "last_updated": "2025-12-13T00:00:00Z",
+    "description": "Calendar events dataset for doctor's schedule",
+    "categories": [
+      {
+        "id": "practice",
+        "name": "Practice",
+        "color": "#2563eb",
+        "icon": "🏥"
+      },
+      {
+        "id": "meeting",
+        "name": "Meeting",
+        "color": "#8b5cf6",
+        "icon": "👥"
+      },
+      {
+        "id": "consultation",
+        "name": "Consultation",
+        "color": "#10b981",
+        "icon": "💬"
+      },
+      {
+        "id": "research",
+        "name": "Research",
+        "color": "#f59e0b",
+        "icon": "🔬"
+      }
+    ]
+  },
+  "events": [
+    {
+      "id": "evt_001",
+      "title": "Morning Rounds",
+      "description": "Daily patient rounds - Ward 3A",
+      "category": "practice",
+      "date": "2025-12-13",
+      "time": "08:00",
+      "duration": 120,
+      "location": "Ward 3A",
+      "participants": ["Dr. Dokter", "Nursing Staff"]
+    },
+    {
+      "id": "evt_002",
+      "title": "Patient Consultation",
+      "description": "Follow-up consultation with John Doe - Post-stroke recovery assessment",
+      "category": "consultation",
+      "date": "2025-12-13",
+      "time": "10:30",
+      "duration": 45,
+      "location": "Consultation Room 2",
+      "participants": ["Dr. Dokter", "John Doe"]
+    },
+    {
+      "id": "evt_003",
+      "title": "Team Meeting",
+      "description": "Multidisciplinary team meeting - Weekly case review",
+      "category": "meeting",
+      "date": "2025-12-13",
+      "time": "14:00",
+      "duration": 90,
+      "location": "Conference Room B",
+      "participants": ["Medical Team", "Physiotherapy", "Nursing"]
+    },
+    {
+      "id": "evt_004",
+      "title": "Research Review",
+      "description": "Clinical trial data analysis - Stroke rehabilitation study",
+      "category": "research",
+      "date": "2025-12-13",
+      "time": "16:00",
+      "duration": 60,
+      "location": "Research Lab",
+      "participants": ["Dr. Dokter", "Research Team"]
+    },
+    {
+      "id": "evt_005",
+      "title": "Emergency Consultation",
+      "description": "Urgent patient consultation - Sarah Williams",
+      "category": "consultation",
+      "date": "2025-12-14",
+      "time": "09:00",
+      "duration": 30,
+      "location": "Emergency Department",
+      "participants": ["Dr. Dokter", "Sarah Williams"]
+    },
+    {
+      "id": "evt_006",
+      "title": "Department Meeting",
+      "description": "Neurology department monthly meeting",
+      "category": "meeting",
+      "date": "2025-12-14",
+      "time": "11:00",
+      "duration": 60,
+      "location": "Conference Room A",
+      "participants": ["Neurology Department"]
+    },
+    {
+      "id": "evt_007",
+      "title": "Clinical Practice",
+      "description": "Outpatient clinic - Stroke recovery patients",
+      "category": "practice",
+      "date": "2025-12-14",
+      "time": "13:00",
+      "duration": 180,
+      "location": "Outpatient Clinic",
+      "participants": ["Dr. Dokter"]
+    },
+    {
+      "id": "evt_008",
+      "title": "Lab Results Review",
+      "description": "Review laboratory results for patient Michael Brown",
+      "category": "consultation",
+      "date": "2025-12-15",
+      "time": "10:00",
+      "duration": 30,
+      "location": "Office",
+      "participants": ["Dr. Dokter"]
+    },
+    {
+      "id": "evt_009",
+      "title": "Research Presentation",
+      "description": "Present findings on post-stroke rehabilitation methods",
+      "category": "research",
+      "date": "2025-12-15",
+      "time": "14:00",
+      "duration": 90,
+      "location": "Auditorium",
+      "participants": ["Medical Staff", "Researchers"]
+    },
+    {
+      "id": "evt_010",
+      "title": "Patient Follow-up",
+      "description": "Follow-up consultation with David Thompson",
+      "category": "consultation",
+      "date": "2025-12-16",
+      "time": "09:30",
+      "duration": 45,
+      "location": "Consultation Room 1",
+      "participants": ["Dr. Dokter", "David Thompson"]
+    },
+    {
+      "id": "evt_011",
+      "title": "Staff Meeting",
+      "description": "Weekly staff coordination meeting",
+      "category": "meeting",
+      "date": "2025-12-16",
+      "time": "15:00",
+      "duration": 60,
+      "location": "Conference Room B",
+      "participants": ["Medical Staff"]
+    },
+    {
+      "id": "evt_012",
+      "title": "Morning Practice",
+      "description": "General practice - New patient consultations",
+      "category": "practice",
+      "date": "2025-12-17",
+      "time": "08:00",
+      "duration": 240,
+      "location": "Clinic",
+      "participants": ["Dr. Dokter"]
+    },
+    {
+      "id": "evt_013",
+      "title": "Research Workshop",
+      "description": "Workshop on latest neurological research methods",
+      "category": "research",
+      "date": "2025-12-17",
+      "time": "13:00",
+      "duration": 120,
+      "location": "Research Center",
+      "participants": ["Research Team"]
+    },
+    {
+      "id": "evt_014",
+      "title": "Case Consultation",
+      "description": "Complex case discussion with Dr. Anderson",
+      "category": "consultation",
+      "date": "2025-12-18",
+      "time": "10:00",
+      "duration": 60,
+      "location": "Consultation Room 3",
+      "participants": ["Dr. Dokter", "Dr. Anderson"]
+    },
+    {
+      "id": "evt_015",
+      "title": "Board Meeting",
+      "description": "Hospital board meeting - Quarterly review",
+      "category": "meeting",
+      "date": "2025-12-18",
+      "time": "14:00",
+      "duration": 120,
+      "location": "Board Room",
+      "participants": ["Hospital Board"]
+    },
+    {
+      "id": "evt_016",
+      "title": "Afternoon Clinic",
+      "description": "Outpatient consultations",
+      "category": "practice",
+      "date": "2025-12-19",
+      "time": "13:00",
+      "duration": 180,
+      "location": "Outpatient Clinic",
+      "participants": ["Dr. Dokter"]
+    },
+    {
+      "id": "evt_017",
+      "title": "Patient Consultation",
+      "description": "Initial consultation with new patient Emma Davis",
+      "category": "consultation",
+      "date": "2025-12-20",
+      "time": "09:00",
+      "duration": 60,
+      "location": "Consultation Room 2",
+      "participants": ["Dr. Dokter", "Emma Davis"]
+    },
+    {
+      "id": "evt_018",
+      "title": "Research Meeting",
+      "description": "Clinical trial progress meeting",
+      "category": "research",
+      "date": "2025-12-20",
+      "time": "11:00",
+      "duration": 90,
+      "location": "Research Lab",
+      "participants": ["Research Team"]
+    },
+    {
+      "id": "evt_019",
+      "title": "Department Rounds",
+      "description": "Weekly department rounds",
+      "category": "practice",
+      "date": "2025-12-23",
+      "time": "08:00",
+      "duration": 150,
+      "location": "Hospital Wards",
+      "participants": ["Medical Team"]
+    },
+    {
+      "id": "evt_020",
+      "title": "Year-End Review",
+      "description": "Annual performance and planning meeting",
+      "category": "meeting",
+      "date": "2025-12-27",
+      "time": "10:00",
+      "duration": 180,
+      "location": "Conference Room A",
+      "participants": ["Department Heads"]
+    }
+  ]
+}

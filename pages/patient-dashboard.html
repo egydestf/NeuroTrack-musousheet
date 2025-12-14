@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="NeuroTrack Patient Dashboard">
+    <title>Patient Dashboard | NeuroTrack</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/dashboard.css">
+</head>
+<body>
+    <!-- Header Navigation -->
+    <header class="dashboard-header">
+        <div class="header-container">
+            <!-- Logo -->
+            <a href="#" class="header-logo">
+                <img src="../assets/img/logo.png" alt="NeuroTrack Logo" class="header-logo__image">
+            </a>
+
+            <!-- Navigation Links -->
+            <nav class="header-nav">
+                <a href="./patient-dashboard.html" class="header-nav__link active">Dashboard</a>
+                <a href="#" class="header-nav__link">Schedule</a>
+                <a href="#" class="header-nav__link">Message</a>
+            </nav>
+
+            <!-- Actions -->
+            <div class="header-actions">
+                <!-- Notification Bell - Filled Icon -->
+                <div style="position: relative;">
+                    <button class="header-notification" aria-label="Notifications" title="Notifications" onclick="toggleNotifications()">
+                        <svg class="notification-icon" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M10 2a6 6 0 00-6 6v3.586l-.707.707A1 1 0 004 14h12a1 1 0 00.707-1.707L16 11.586V8a6 6 0 00-6-6zM10 18a3 3 0 01-3-3h6a3 3 0 01-3 3z"/>
+                        </svg>
+                        <span class="header-notification__badge"></span>
+                    </button>
+                    
+                    <!-- Notification Dropdown -->
+                    <div class="notification-dropdown" id="notificationDropdown">
+                        <div class="notification-dropdown__header">
+                            <span class="notification-dropdown__title">Notifications</span>
+                            <span class="notification-dropdown__count">5</span>
+                        </div>
+                        <div class="notification-dropdown__list" id="notificationList">
+                            <!-- Notifications will be inserted here by JavaScript -->
+                        </div>
+                        <div class="notification-dropdown__footer">
+                            <a href="#">View all notifications</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- User Profile - Round Photo -->
+                <div class="header-user" onclick="toggleUserMenu()">
+                    <div class="header-user__info">
+                        <div class="header-user__name" id="userName">Patient User</div>
+                        <div class="header-user__role" id="userRole">Patient</div>
+                    </div>
+                    <div class="header-user__avatar" id="userAvatar">
+                        <!-- Profile photo will be inserted here or show initial -->
+                        P
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="dashboard-main">
+        <div class="dashboard-container">
+            <h1>Welcome to Your Dashboard</h1>
+            <p>Your rehabilitation journey starts here.</p>
+        </div>
+    </main>
+
+    <script>
+        // Patient-specific notifications
+        const patientNotifications = [
+            { icon: 'info', title: 'Upcoming Session', description: 'Your next rehabilitation session is scheduled for tomorrow at 10:00 AM', time: '5 min ago', unread: true },
+            { icon: 'success', title: 'Progress Update', description: 'Great job! You have completed 85% of this week\'s exercises. Keep up the excellent work!', time: '1 hour ago', unread: true },
+            { icon: 'warning', title: 'Medication Reminder', description: 'Don\'t forget to take your prescribed medication at 2:00 PM today', time: '2 hours ago', unread: true },
+            { icon: 'info', title: 'New Exercise Added', description: 'Your physiotherapist has added a new balance exercise to your routine', time: '3 hours ago', unread: true },
+            { icon: 'success', title: 'Milestone Achieved', description: 'Congratulations! You\'ve reached 30 consecutive days of rehabilitation exercises', time: '5 hours ago', unread: true },
+            { icon: 'info', title: 'Doctor Message', description: 'Dr. Smith has sent you a message regarding your latest progress report', time: 'Yesterday', unread: false },
+            { icon: 'warning', title: 'Schedule Change', description: 'Your appointment on Friday has been rescheduled to 3:00 PM due to doctor availability', time: 'Yesterday', unread: false },
+            { icon: 'success', title: 'Exercise Completed', description: 'You have successfully completed today\'s morning exercise routine. Great work!', time: '2 days ago', unread: false },
+            { icon: 'info', title: 'Health Tip', description: 'Remember to stay hydrated during your exercises. Aim for at least 8 glasses of water daily', time: '3 days ago', unread: false },
+            { icon: 'info', title: 'New Resources', description: 'New educational materials about stroke recovery have been added to your library', time: '1 week ago', unread: false }
+        ];
+
+        // Toggle notification dropdown
+        function toggleNotifications() {
+            const dropdown = document.getElementById('notificationDropdown');
+            const button = document.querySelector('.header-notification');
+            dropdown.classList.toggle('active');
+            button.classList.toggle('active');
+        }
+
+        // Close dropdown when clicking outside
+        document.addEventListener('click', (e) => {
+            const dropdown = document.getElementById('notificationDropdown');
+            const button = document.querySelector('.header-notification');
+            if (dropdown && !dropdown.contains(e.target) && !button.contains(e.target)) {
+                dropdown.classList.remove('active');
+                button.classList.remove('active');
+            }
+        });
+
+        // Load notifications
+        function loadNotifications() {
+            const listContainer = document.getElementById('notificationList');
+            listContainer.innerHTML = patientNotifications.map(notif => `
+                <div class="notification-item ${notif.unread ? 'unread' : ''}">
+                    <div class="notification-item__icon ${notif.icon}">
+                        ${notif.icon === 'info' ? 'ℹ️' : notif.icon === 'success' ? '✅' : notif.icon === 'warning' ? '⚠️' : '🔔'}
+                    </div>
+                    <div class="notification-item__content">
+                        <div class="notification-item__title">${notif.title}</div>
+                        <div class="notification-item__description">${notif.description}</div>
+                        <div class="notification-item__time">${notif.time}</div>
+                    </div>
+                </div>
+            `).join('');
+            
+            // Update notification count
+            const unreadCount = patientNotifications.filter(n => n.unread).length;
+            document.querySelector('.notification-dropdown__count').textContent = unreadCount;
+        }
+
+        // Load user data from localStorage
+        window.addEventListener('DOMContentLoaded', () => {
+            const userData = JSON.parse(localStorage.getItem('neurotrack_user') || '{}');
+            
+            if (!userData.role || userData.role !== 'patient') {
+                // Redirect to login if not authenticated or wrong role
+                window.location.href = './login.html';
+                return;
+            }
+            
+            // Update header with user data
+            document.getElementById('userName').textContent = userData.profile?.fullName || 'Patient User';
+            document.getElementById('userRole').textContent = 'Patient';
+            
+            // Update avatar with first letter of name
+            const firstLetter = (userData.profile?.fullName || 'P').charAt(0).toUpperCase();
+            document.getElementById('userAvatar').textContent = firstLetter;
+            
+            // Load notifications
+            loadNotifications();
+        });
+
+        function toggleUserMenu() {
+            // Placeholder for user menu functionality
+            const confirmLogout = confirm('Do you want to log out?');
+            if (confirmLogout) {
+                localStorage.removeItem('neurotrack_user');
+                window.location.href = './login.html';
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,52 @@
+{
+  "users": [
+    {
+      "id": "user_001",
+      "username": "dokter",
+      "email": "dokter@neurotrack.com",
+      "password_hash": "$2b$12$7ell0S/MYRvY9WbcR9XPweqj7LvDzeT9KMCy75e2YEEKIVStPWEla",
+      "role": "doctor",
+      "profile": {
+        "fullName": "Dr. Dokter",
+        "licenseId": "MD-123456",
+        "specialization": "neurology",
+        "hospitalAffiliation": "General Hospital"
+      },
+      "created_at": "2025-12-13T00:00:00Z",
+      "last_login": "2025-12-14T04:36:31.511705Z"
+    },
+    {
+      "id": "user_002",
+      "username": "pasien",
+      "email": "pasien@neurotrack.com",
+      "password_hash": "$2b$12$d5uL/IPDhxkiFn.jU3F8m.KQ.4XZoPk75uUhjklBK2DvTTQy0MsVy",
+      "role": "patient",
+      "profile": {
+        "fullName": "Pasien User",
+        "dateOfBirth": "1990-01-01",
+        "medicalRecordNumber": "MRN-123456"
+      },
+      "created_at": "2025-12-13T00:00:00Z",
+      "last_login": "2025-12-13T10:29:47.280835Z"
+    },
+    {
+      "id": "user_003",
+      "username": "psikioterapi",
+      "email": "psikioterapi@neurotrack.com",
+      "password_hash": "$2b$12$D8Fon/JLoY1C99rhSBRI3eTIePg5jLxa58TEROIkIsZ8JJrCvOZoO",
+      "role": "physio",
+      "profile": {
+        "fullName": "Psikioterapi Specialist",
+        "certificationLevel": "RPT",
+        "assignedRegion": "central"
+      },
+      "created_at": "2025-12-13T00:00:00Z",
+      "last_login": "2025-12-13T10:29:49.327873Z"
+    }
+  ],
+  "_meta": {
+    "version": "1.0",
+    "last_updated": "2025-12-14T04:36:31.512711Z",
+    "total_users": 3
+  }
+}

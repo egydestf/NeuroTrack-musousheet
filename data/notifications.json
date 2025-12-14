@@ -1,0 +1,325 @@
+{
+  "_meta": {
+    "version": "1.0",
+    "last_updated": "2025-12-13T00:00:00Z",
+    "description": "Structured notification dataset for all user roles"
+  },
+  "notifications": {
+    "doctor": [
+      {
+        "id": "doc_001",
+        "type": "warning",
+        "title": "Critical Patient Alert",
+        "description": "Patient John Doe (ID: 12345) requires immediate attention. Vitals show concerning trend",
+        "timestamp": "2025-12-13T10:30:00Z",
+        "time_ago": "2 min ago",
+        "unread": true,
+        "priority": "high",
+        "action_url": "/patients/12345"
+      },
+      {
+        "id": "doc_002",
+        "type": "info",
+        "title": "New Patient Assignment",
+        "description": "You have been assigned a new patient: Sarah Williams. Review case file in your dashboard",
+        "timestamp": "2025-12-13T09:45:00Z",
+        "time_ago": "15 min ago",
+        "unread": true,
+        "priority": "medium",
+        "action_url": "/patients/new"
+      },
+      {
+        "id": "doc_003",
+        "type": "success",
+        "title": "Lab Results Ready",
+        "description": "Laboratory results for patient Michael Brown are now available for review",
+        "timestamp": "2025-12-13T09:15:00Z",
+        "time_ago": "45 min ago",
+        "unread": true,
+        "priority": "medium",
+        "action_url": "/lab-results/456"
+      },
+      {
+        "id": "doc_004",
+        "type": "info",
+        "title": "Meeting Reminder",
+        "description": "Multidisciplinary team meeting scheduled for today at 2:00 PM in Conference Room B",
+        "timestamp": "2025-12-13T09:00:00Z",
+        "time_ago": "1 hour ago",
+        "unread": true,
+        "priority": "medium",
+        "action_url": "/schedule"
+      },
+      {
+        "id": "doc_005",
+        "type": "warning",
+        "title": "Prescription Renewal",
+        "description": "Prescription for patient Emma Davis expires in 3 days. Please review and renew if necessary",
+        "timestamp": "2025-12-13T08:00:00Z",
+        "time_ago": "2 hours ago",
+        "unread": true,
+        "priority": "medium",
+        "action_url": "/prescriptions/789"
+      },
+      {
+        "id": "doc_006",
+        "type": "success",
+        "title": "Patient Progress Report",
+        "description": "Patient David Thompson has shown 40% improvement in mobility assessments this month",
+        "timestamp": "2025-12-13T06:00:00Z",
+        "time_ago": "4 hours ago",
+        "unread": true,
+        "priority": "low",
+        "action_url": "/reports/101"
+      },
+      {
+        "id": "doc_007",
+        "type": "info",
+        "title": "Consultation Request",
+        "description": "Dr. Anderson requests your consultation on a complex neurology case for patient review",
+        "timestamp": "2025-12-12T16:00:00Z",
+        "time_ago": "Yesterday",
+        "unread": false,
+        "priority": "medium",
+        "action_url": "/consultations/202"
+      },
+      {
+        "id": "doc_008",
+        "type": "info",
+        "title": "New Research Study",
+        "description": "New clinical trial on post-stroke rehabilitation methods now accepting patient enrollment",
+        "timestamp": "2025-12-12T14:00:00Z",
+        "time_ago": "Yesterday",
+        "unread": false,
+        "priority": "low",
+        "action_url": "/research/303"
+      },
+      {
+        "id": "doc_009",
+        "type": "success",
+        "title": "Patient Discharge Approval",
+        "description": "Patient Lisa Martinez has been approved for discharge. Discharge summary completed",
+        "timestamp": "2025-12-11T10:00:00Z",
+        "time_ago": "2 days ago",
+        "unread": false,
+        "priority": "low",
+        "action_url": "/patients/404"
+      },
+      {
+        "id": "doc_010",
+        "type": "info",
+        "title": "System Update",
+        "description": "Electronic Health Records system will undergo scheduled maintenance this weekend",
+        "timestamp": "2025-12-10T08:00:00Z",
+        "time_ago": "3 days ago",
+        "unread": false,
+        "priority": "low",
+        "action_url": "/system/updates"
+      }
+    ],
+    "patient": [
+      {
+        "id": "pat_001",
+        "type": "info",
+        "title": "Upcoming Session",
+        "description": "Your next rehabilitation session is scheduled for tomorrow at 10:00 AM",
+        "timestamp": "2025-12-13T10:25:00Z",
+        "time_ago": "5 min ago",
+        "unread": true,
+        "priority": "high"
+      },
+      {
+        "id": "pat_002",
+        "type": "success",
+        "title": "Progress Update",
+        "description": "Great job! You have completed 85% of this week's exercises. Keep up the excellent work!",
+        "timestamp": "2025-12-13T09:00:00Z",
+        "time_ago": "1 hour ago",
+        "unread": true,
+        "priority": "medium"
+      },
+      {
+        "id": "pat_003",
+        "type": "warning",
+        "title": "Medication Reminder",
+        "description": "Don't forget to take your prescribed medication at 2:00 PM today",
+        "timestamp": "2025-12-13T08:00:00Z",
+        "time_ago": "2 hours ago",
+        "unread": true,
+        "priority": "high"
+      },
+      {
+        "id": "pat_004",
+        "type": "info",
+        "title": "New Exercise Added",
+        "description": "Your physiotherapist has added a new balance exercise to your routine",
+        "timestamp": "2025-12-13T07:00:00Z",
+        "time_ago": "3 hours ago",
+        "unread": true,
+        "priority": "medium"
+      },
+      {
+        "id": "pat_005",
+        "type": "success",
+        "title": "Milestone Achieved",
+        "description": "Congratulations! You've reached 30 consecutive days of rehabilitation exercises",
+        "timestamp": "2025-12-13T05:00:00Z",
+        "time_ago": "5 hours ago",
+        "unread": true,
+        "priority": "low"
+      },
+      {
+        "id": "pat_006",
+        "type": "info",
+        "title": "Doctor Message",
+        "description": "Dr. Smith has sent you a message regarding your latest progress report",
+        "timestamp": "2025-12-12T14:00:00Z",
+        "time_ago": "Yesterday",
+        "unread": false,
+        "priority": "medium"
+      },
+      {
+        "id": "pat_007",
+        "type": "warning",
+        "title": "Schedule Change",
+        "description": "Your appointment on Friday has been rescheduled to 3:00 PM due to doctor availability",
+        "timestamp": "2025-12-12T10:00:00Z",
+        "time_ago": "Yesterday",
+        "unread": false,
+        "priority": "medium"
+      },
+      {
+        "id": "pat_008",
+        "type": "success",
+        "title": "Exercise Completed",
+        "description": "You have successfully completed today's morning exercise routine. Great work!",
+        "timestamp": "2025-12-11T08:00:00Z",
+        "time_ago": "2 days ago",
+        "unread": false,
+        "priority": "low"
+      },
+      {
+        "id": "pat_009",
+        "type": "info",
+        "title": "Health Tip",
+        "description": "Remember to stay hydrated during your exercises. Aim for at least 8 glasses of water daily",
+        "timestamp": "2025-12-10T12:00:00Z",
+        "time_ago": "3 days ago",
+        "unread": false,
+        "priority": "low"
+      },
+      {
+        "id": "pat_010",
+        "type": "info",
+        "title": "New Resources",
+        "description": "New educational materials about stroke recovery have been added to your library",
+        "timestamp": "2025-12-06T09:00:00Z",
+        "time_ago": "1 week ago",
+        "unread": false,
+        "priority": "low"
+      }
+    ],
+    "physio": [
+      {
+        "id": "phy_001",
+        "type": "info",
+        "title": "Session Scheduled",
+        "description": "New rehabilitation session scheduled with patient Robert Chen tomorrow at 9:00 AM",
+        "timestamp": "2025-12-13T10:20:00Z",
+        "time_ago": "10 min ago",
+        "unread": true,
+        "priority": "high"
+      },
+      {
+        "id": "phy_002",
+        "type": "success",
+        "title": "Exercise Plan Approved",
+        "description": "Dr. Williams has approved your customized exercise plan for patient Jennifer Lopez",
+        "timestamp": "2025-12-13T10:00:00Z",
+        "time_ago": "30 min ago",
+        "unread": true,
+        "priority": "medium"
+      },
+      {
+        "id": "phy_003",
+        "type": "warning",
+        "title": "Equipment Maintenance",
+        "description": "Treadmill #3 requires maintenance. Please use alternative equipment for walking exercises",
+        "timestamp": "2025-12-13T09:00:00Z",
+        "time_ago": "1 hour ago",
+        "unread": true,
+        "priority": "medium"
+      },
+      {
+        "id": "phy_004",
+        "type": "info",
+        "title": "Patient Progress Note",
+        "description": "Patient Mark Johnson has completed 90% of assigned exercises this week. Excellent adherence!",
+        "timestamp": "2025-12-13T07:00:00Z",
+        "time_ago": "3 hours ago",
+        "unread": true,
+        "priority": "low"
+      },
+      {
+        "id": "phy_005",
+        "type": "success",
+        "title": "Training Workshop",
+        "description": "New techniques workshop on post-stroke gait training available. Register by end of week",
+        "timestamp": "2025-12-13T05:00:00Z",
+        "time_ago": "5 hours ago",
+        "unread": false,
+        "priority": "medium"
+      },
+      {
+        "id": "phy_006",
+        "type": "info",
+        "title": "Assessment Due",
+        "description": "Quarterly mobility assessment for patient Amanda White is due in 3 days",
+        "timestamp": "2025-12-12T14:00:00Z",
+        "time_ago": "Yesterday",
+        "unread": false,
+        "priority": "medium"
+      },
+      {
+        "id": "phy_007",
+        "type": "warning",
+        "title": "Room Change",
+        "description": "Your 2:00 PM session has been moved from Therapy Room A to Therapy Room C",
+        "timestamp": "2025-12-12T10:00:00Z",
+        "time_ago": "Yesterday",
+        "unread": false,
+        "priority": "low"
+      },
+      {
+        "id": "phy_008",
+        "type": "success",
+        "title": "Patient Feedback",
+        "description": "Patient Thomas Anderson left positive feedback about your rehabilitation guidance",
+        "timestamp": "2025-12-11T16:00:00Z",
+        "time_ago": "2 days ago",
+        "unread": false,
+        "priority": "low"
+      },
+      {
+        "id": "phy_009",
+        "type": "info",
+        "title": "New Equipment Arrival",
+        "description": "Balance training equipment has arrived and is now available in the therapy center",
+        "timestamp": "2025-12-10T10:00:00Z",
+        "time_ago": "3 days ago",
+        "unread": false,
+        "priority": "low"
+      },
+      {
+        "id": "phy_010",
+        "type": "info",
+        "title": "Protocol Update",
+        "description": "Updated rehabilitation protocols for stroke patients have been published in your resource library",
+        "timestamp": "2025-12-06T08:00:00Z",
+        "time_ago": "1 week ago",
+        "unread": false,
+        "priority": "low"
+      }
+    ]
+  }
+}
