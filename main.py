@@ -88,6 +88,11 @@ def serve_assets(filename):
     """Serve static assets (CSS, JS, images)"""
     return send_from_directory('assets', filename)
 
+@app.route('/data/<path:filename>')
+def serve_data(filename):
+    """Serve JSON data files"""
+    return send_from_directory('data', filename)
+
 
 # ==================== HEALTH CHECK ====================
 

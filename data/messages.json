@@ -1,18 +1,18 @@
 {
   "_meta": {
-    "version": "1.0",
-    "description": "Dummy messaging data for NeuroTrack chat system",
-    "last_updated": "2025-12-15T00:00:00Z"
+    "version": "2.0",
+    "description": "Expanded dummy messaging data for NeuroTrack chat system - Post-stroke rehabilitation therapy",
+    "last_updated": "2025-12-16T00:00:00Z"
   },
   "participants": [
     {
       "id": "p1",
       "type": "patient",
       "name": "Alice Tan",
-      "role": "Post-Stroke Patient",
+      "role": "Post-Stroke Recovery",
       "avatar": "",
       "lastMessage": "Thank you for the advice, Doctor!",
-      "lastMessageTime": "2025-12-15T09:45:00Z",
+      "lastMessageTime": "2025-12-16T09:45:00Z",
       "unread": 2,
       "online": true
     },
@@ -20,10 +20,10 @@
       "id": "p2",
       "type": "patient",
       "name": "Robert Chen",
-      "role": "Rehabilitation Patient",
+      "role": "Motor Function Rehab",
       "avatar": "",
-      "lastMessage": "When is my next session?",
-      "lastMessageTime": "2025-12-15T08:30:00Z",
+      "lastMessage": "The hand exercises are getting easier",
+      "lastMessageTime": "2025-12-16T08:30:00Z",
       "unread": 0,
       "online": false
     },
@@ -31,10 +31,10 @@
       "id": "p3",
       "type": "patient",
       "name": "Maria Santos",
-      "role": "Physical Therapy Patient",
+      "role": "Balance Recovery",
       "avatar": "",
-      "lastMessage": "I completed today's exercises",
-      "lastMessageTime": "2025-12-14T18:20:00Z",
+      "lastMessage": "I walked 20 steps today without support!",
+      "lastMessageTime": "2025-12-15T18:20:00Z",
       "unread": 1,
       "online": true
     },
@@ -42,12 +42,78 @@
       "id": "p4",
       "type": "patient",
       "name": "John Williams",
-      "role": "Recovery Patient",
+      "role": "Speech Therapy Patient",
       "avatar": "",
-      "lastMessage": "Feeling much better now",
-      "lastMessageTime": "2025-12-14T14:15:00Z",
+      "lastMessage": "My pronunciation is improving",
+      "lastMessageTime": "2025-12-15T14:15:00Z",
       "unread": 0,
       "online": false
+    },
+    {
+      "id": "p5",
+      "type": "patient",
+      "name": "Susan Park",
+      "role": "Upper Limb Recovery",
+      "avatar": "",
+      "lastMessage": "Can we increase the session frequency?",
+      "lastMessageTime": "2025-12-16T10:05:00Z",
+      "unread": 1,
+      "online": true
+    },
+    {
+      "id": "p6",
+      "type": "patient",
+      "name": "David Kumar",
+      "role": "Cognitive Rehabilitation",
+      "avatar": "",
+      "lastMessage": "The memory exercises are challenging",
+      "lastMessageTime": "2025-12-16T07:20:00Z",
+      "unread": 0,
+      "online": true
+    },
+    {
+      "id": "p7",
+      "type": "patient",
+      "name": "Linda Thompson",
+      "role": "Mobility Rehabilitation",
+      "avatar": "",
+      "lastMessage": "I need help with the stretching routine",
+      "lastMessageTime": "2025-12-15T16:30:00Z",
+      "unread": 2,
+      "online": false
+    },
+    {
+      "id": "p8",
+      "type": "patient",
+      "name": "Michael Okonkwo",
+      "role": "Strength Recovery",
+      "avatar": "",
+      "lastMessage": "My grip strength test results improved!",
+      "lastMessageTime": "2025-12-16T11:00:00Z",
+      "unread": 0,
+      "online": true
+    },
+    {
+      "id": "p9",
+      "type": "patient",
+      "name": "Elena Rodriguez",
+      "role": "Fine Motor Skills",
+      "avatar": "",
+      "lastMessage": "I can button my shirt now",
+      "lastMessageTime": "2025-12-15T19:45:00Z",
+      "unread": 1,
+      "online": false
+    },
+    {
+      "id": "p10",
+      "type": "patient",
+      "name": "James Mitchell",
+      "role": "Gait Training",
+      "avatar": "",
+      "lastMessage": "When can I stop using the walker?",
+      "lastMessageTime": "2025-12-16T09:15:00Z",
+      "unread": 0,
+      "online": true
     },
     {
       "id": "pt1",
@@ -55,8 +121,8 @@
       "name": "Dr. Sarah Johnson",
       "role": "Senior Physiotherapist",
       "avatar": "",
-      "lastMessage": "Patient progress looking good",
-      "lastMessageTime": "2025-12-15T10:15:00Z",
+      "lastMessage": "Patient progress reports are ready",
+      "lastMessageTime": "2025-12-16T10:15:00Z",
       "unread": 0,
       "online": true
     },
@@ -64,10 +130,10 @@
       "id": "pt2",
       "type": "physio",
       "name": "Dr. Michael Lee",
-      "role": "Rehabilitation Specialist",
+      "role": "Neuro Rehab Specialist",
       "avatar": "",
-      "lastMessage": "See you at the meeting",
-      "lastMessageTime": "2025-12-15T07:00:00Z",
+      "lastMessage": "New protocol for stroke recovery",
+      "lastMessageTime": "2025-12-16T07:00:00Z",
       "unread": 3,
       "online": true
     },
@@ -75,10 +141,87 @@
       "id": "pt3",
       "type": "physio",
       "name": "Dr. Emily Davis",
-      "role": "Physical Therapist",
+      "role": "Occupational Therapist",
       "avatar": "",
-      "lastMessage": "New treatment plan attached",
-      "lastMessageTime": "2025-12-14T16:45:00Z",
+      "lastMessage": "ADL assessment completed for Mrs. Santos",
+      "lastMessageTime": "2025-12-15T16:45:00Z",
+      "unread": 0,
+      "online": false
+    },
+    {
+      "id": "pt4",
+      "type": "physio",
+      "name": "Dr. James Wilson",
+      "role": "Speech Pathologist",
+      "avatar": "",
+      "lastMessage": "Aphasia treatment plan updated",
+      "lastMessageTime": "2025-12-16T08:30:00Z",
+      "unread": 1,
+      "online": true
+    },
+    {
+      "id": "pt5",
+      "type": "physio",
+      "name": "Dr. Lisa Nguyen",
+      "role": "Movement Specialist",
+      "avatar": "",
+      "lastMessage": "Gait analysis results look promising",
+      "lastMessageTime": "2025-12-15T15:20:00Z",
+      "unread": 0,
+      "online": false
+    },
+    {
+      "id": "pt6",
+      "type": "physio",
+      "name": "Dr. Kevin Patel",
+      "role": "Cognitive Therapist",
+      "avatar": "",
+      "lastMessage": "Memory assessment scheduled for Monday",
+      "lastMessageTime": "2025-12-16T09:50:00Z",
+      "unread": 2,
+      "online": true
+    },
+    {
+      "id": "pt7",
+      "type": "physio",
+      "name": "Dr. Rachel Kim",
+      "role": "Hand Therapist",
+      "avatar": "",
+      "lastMessage": "New splint design for Mr. Chen",
+      "lastMessageTime": "2025-12-15T14:30:00Z",
+      "unread": 0,
+      "online": true
+    },
+    {
+      "id": "pt8",
+      "type": "physio",
+      "name": "Dr. Andrew Foster",
+      "role": "Balance Specialist",
+      "avatar": "",
+      "lastMessage": "Vestibular therapy showing results",
+      "lastMessageTime": "2025-12-16T11:20:00Z",
+      "unread": 0,
+      "online": false
+    },
+    {
+      "id": "pt9",
+      "type": "physio",
+      "name": "Dr. Maria Garcia",
+      "role": "Aquatic Therapist",
+      "avatar": "",
+      "lastMessage": "Pool session rescheduled to Thursday",
+      "lastMessageTime": "2025-12-15T17:00:00Z",
+      "unread": 1,
+      "online": true
+    },
+    {
+      "id": "pt10",
+      "type": "physio",
+      "name": "Dr. Thomas Wright",
+      "role": "Pain Management",
+      "avatar": "",
+      "lastMessage": "TENS unit protocol updated",
+      "lastMessageTime": "2025-12-16T08:00:00Z",
       "unread": 0,
       "online": false
     }
@@ -89,8 +232,8 @@
         "id": "m1",
         "from": "p1",
         "to": "me",
-        "text": "Good morning, Doctor. I wanted to update you on my progress.",
-        "time": "2025-12-15T09:30:00Z",
+        "text": "Good morning, Doctor. I wanted to update you on my progress with the arm exercises.",
+        "time": "2025-12-16T09:30:00Z",
         "sent": true,
         "read": true
       },
@@ -98,8 +241,8 @@
         "id": "m2",
         "from": "me",
         "to": "p1",
-        "text": "Good morning, Alice! I'm glad to hear from you. How are you feeling today?",
-        "time": "2025-12-15T09:32:00Z",
+        "text": "Good morning, Alice! I'm glad to hear from you. How are you feeling today? Any discomfort during the exercises?",
+        "time": "2025-12-16T09:32:00Z",
         "sent": true,
         "read": true
       },
@@ -107,8 +250,8 @@
         "id": "m3",
         "from": "p1",
         "to": "me",
-        "text": "I've been doing the exercises you recommended. My mobility has improved significantly!",
-        "time": "2025-12-15T09:35:00Z",
+        "text": "My shoulder mobility has improved significantly! I can now raise my arm above my head without pain.",
+        "time": "2025-12-16T09:35:00Z",
         "sent": true,
         "read": true
       },
@@ -116,8 +259,8 @@
         "id": "m4",
         "from": "me",
         "to": "p1",
-        "text": "That's excellent news! Keep up the good work. Make sure to rest between sessions.",
-        "time": "2025-12-15T09:40:00Z",
+        "text": "That's excellent progress! Keep up the good work. Let's add some resistance exercises in your next session.",
+        "time": "2025-12-16T09:40:00Z",
         "sent": true,
         "read": true
       },
@@ -126,7 +269,7 @@
         "from": "p1",
         "to": "me",
         "text": "Thank you for the advice, Doctor!",
-        "time": "2025-12-15T09:45:00Z",
+        "time": "2025-12-16T09:45:00Z",
         "sent": true,
         "read": false
       }
@@ -136,8 +279,8 @@
         "id": "m6",
         "from": "p2",
         "to": "me",
-        "text": "Hi Doctor, I hope you're doing well.",
-        "time": "2025-12-15T08:20:00Z",
+        "text": "Hi Doctor, I've been practicing the finger dexterity exercises you recommended.",
+        "time": "2025-12-16T08:15:00Z",
         "sent": true,
         "read": true
       },
@@ -145,8 +288,8 @@
         "id": "m7",
         "from": "me",
         "to": "p2",
-        "text": "Hello Robert! I'm doing well, thank you. How can I help you?",
-        "time": "2025-12-15T08:25:00Z",
+        "text": "Hello Robert! That's great to hear. How many repetitions are you managing now?",
+        "time": "2025-12-16T08:20:00Z",
         "sent": true,
         "read": true
       },
@@ -154,126 +297,548 @@
         "id": "m8",
         "from": "p2",
         "to": "me",
-        "text": "When is my next session?",
-        "time": "2025-12-15T08:30:00Z",
+        "text": "I can do 15 reps without fatigue. The hand exercises are getting easier each week.",
+        "time": "2025-12-16T08:25:00Z",
+        "sent": true,
+        "read": true
+      },
+      {
+        "id": "m9",
+        "from": "me",
+        "to": "p2",
+        "text": "Wonderful improvement! Let's try adding the therapy putty exercises we discussed.",
+        "time": "2025-12-16T08:30:00Z",
         "sent": true,
         "read": true
       }
     ],
     "p3": [
       {
-        "id": "m9",
+        "id": "m10",
         "from": "p3",
         "to": "me",
-        "text": "I completed today's exercises",
-        "time": "2025-12-14T18:20:00Z",
-        "sent": true,
-        "read": false
-      }
-    ],
-    "p4": [
-      {
-        "id": "m10",
-        "from": "p4",
-        "to": "me",
-        "text": "The new medication is working well.",
-        "time": "2025-12-14T14:10:00Z",
+        "text": "Doctor, I have some exciting news to share!",
+        "time": "2025-12-15T18:00:00Z",
         "sent": true,
         "read": true
       },
       {
         "id": "m11",
         "from": "me",
-        "to": "p4",
-        "text": "That's great to hear! Continue with the prescribed dosage.",
-        "time": "2025-12-14T14:12:00Z",
+        "to": "p3",
+        "text": "Hi Maria! I'd love to hear it. How did today's balance exercises go?",
+        "time": "2025-12-15T18:10:00Z",
         "sent": true,
         "read": true
       },
       {
         "id": "m12",
-        "from": "p4",
+        "from": "p3",
         "to": "me",
-        "text": "Feeling much better now",
-        "time": "2025-12-14T14:15:00Z",
+        "text": "I walked 20 steps today without support! My daughter was so happy she cried.",
+        "time": "2025-12-15T18:20:00Z",
         "sent": true,
-        "read": true
+        "read": false
       }
     ],
-    "pt1": [
+    "p4": [
       {
         "id": "m13",
-        "from": "pt1",
+        "from": "p4",
         "to": "me",
-        "text": "Good morning! I reviewed the patient files you sent.",
-        "time": "2025-12-15T10:00:00Z",
+        "text": "I practiced the tongue exercises and word repetitions all morning.",
+        "time": "2025-12-15T14:00:00Z",
         "sent": true,
         "read": true
       },
       {
         "id": "m14",
         "from": "me",
-        "to": "pt1",
-        "text": "Great! What are your thoughts on the treatment plans?",
-        "time": "2025-12-15T10:10:00Z",
+        "to": "p4",
+        "text": "Excellent dedication, John! How do you feel about your speech clarity?",
+        "time": "2025-12-15T14:10:00Z",
         "sent": true,
         "read": true
       },
       {
         "id": "m15",
+        "from": "p4",
+        "to": "me",
+        "text": "My pronunciation is improving. My wife says she understands me better now.",
+        "time": "2025-12-15T14:15:00Z",
+        "sent": true,
+        "read": true
+      }
+    ],
+    "p5": [
+      {
+        "id": "m16",
+        "from": "p5",
+        "to": "me",
+        "text": "Good morning Doctor. I've noticed significant progress this week.",
+        "time": "2025-12-16T09:50:00Z",
+        "sent": true,
+        "read": true
+      },
+      {
+        "id": "m17",
+        "from": "me",
+        "to": "p5",
+        "text": "That's wonderful news, Susan! Which exercises have been most effective for you?",
+        "time": "2025-12-16T09:55:00Z",
+        "sent": true,
+        "read": true
+      },
+      {
+        "id": "m18",
+        "from": "p5",
+        "to": "me",
+        "text": "The reaching exercises really help. Can we increase the session frequency? I feel ready for more.",
+        "time": "2025-12-16T10:05:00Z",
+        "sent": true,
+        "read": false
+      }
+    ],
+    "p6": [
+      {
+        "id": "m19",
+        "from": "p6",
+        "to": "me",
+        "text": "Doctor, I wanted to discuss the cognitive exercises we started last week.",
+        "time": "2025-12-16T07:05:00Z",
+        "sent": true,
+        "read": true
+      },
+      {
+        "id": "m20",
+        "from": "me",
+        "to": "p6",
+        "text": "Of course, David. How are you finding the memory and attention exercises?",
+        "time": "2025-12-16T07:10:00Z",
+        "sent": true,
+        "read": true
+      },
+      {
+        "id": "m21",
+        "from": "p6",
+        "to": "me",
+        "text": "The memory exercises are challenging, but I can feel my concentration improving.",
+        "time": "2025-12-16T07:20:00Z",
+        "sent": true,
+        "read": true
+      }
+    ],
+    "p7": [
+      {
+        "id": "m22",
+        "from": "p7",
+        "to": "me",
+        "text": "Hi Doctor, I'm having some trouble with the stretching routine.",
+        "time": "2025-12-15T16:10:00Z",
+        "sent": true,
+        "read": true
+      },
+      {
+        "id": "m23",
+        "from": "me",
+        "to": "p7",
+        "text": "Hello Linda. What specific difficulties are you experiencing?",
+        "time": "2025-12-15T16:20:00Z",
+        "sent": true,
+        "read": true
+      },
+      {
+        "id": "m24",
+        "from": "p7",
+        "to": "me",
+        "text": "I need help with the stretching routine - the hip flexor stretch feels uncomfortable.",
+        "time": "2025-12-15T16:30:00Z",
+        "sent": true,
+        "read": false
+      }
+    ],
+    "p8": [
+      {
+        "id": "m25",
+        "from": "p8",
+        "to": "me",
+        "text": "Doctor, I just got my assessment results from the therapy center!",
+        "time": "2025-12-16T10:45:00Z",
+        "sent": true,
+        "read": true
+      },
+      {
+        "id": "m26",
+        "from": "me",
+        "to": "p8",
+        "text": "I saw the report, Michael. Your dedication is really paying off!",
+        "time": "2025-12-16T10:50:00Z",
+        "sent": true,
+        "read": true
+      },
+      {
+        "id": "m27",
+        "from": "p8",
+        "to": "me",
+        "text": "My grip strength test results improved! From 8kg to 15kg in just six weeks.",
+        "time": "2025-12-16T11:00:00Z",
+        "sent": true,
+        "read": true
+      }
+    ],
+    "p9": [
+      {
+        "id": "m28",
+        "from": "p9",
+        "to": "me",
+        "text": "I wanted to share a small victory with you, Doctor.",
+        "time": "2025-12-15T19:30:00Z",
+        "sent": true,
+        "read": true
+      },
+      {
+        "id": "m29",
+        "from": "me",
+        "to": "p9",
+        "text": "I'd love to hear it, Elena! Every milestone matters in recovery.",
+        "time": "2025-12-15T19:40:00Z",
+        "sent": true,
+        "read": true
+      },
+      {
+        "id": "m30",
+        "from": "p9",
+        "to": "me",
+        "text": "I can button my shirt now without help! The fine motor exercises are working.",
+        "time": "2025-12-15T19:45:00Z",
+        "sent": true,
+        "read": false
+      }
+    ],
+    "p10": [
+      {
+        "id": "m31",
+        "from": "p10",
+        "to": "me",
+        "text": "Good morning, Doctor. I have a question about my mobility aids.",
+        "time": "2025-12-16T09:00:00Z",
+        "sent": true,
+        "read": true
+      },
+      {
+        "id": "m32",
+        "from": "me",
+        "to": "p10",
+        "text": "Good morning, James. What would you like to know?",
+        "time": "2025-12-16T09:05:00Z",
+        "sent": true,
+        "read": true
+      },
+      {
+        "id": "m33",
+        "from": "p10",
+        "to": "me",
+        "text": "When can I stop using the walker? I feel much steadier on my feet now.",
+        "time": "2025-12-16T09:15:00Z",
+        "sent": true,
+        "read": true
+      },
+      {
+        "id": "m34",
+        "from": "me",
+        "to": "p10",
+        "text": "Let's assess that in your next session. We may transition you to a cane first for safety.",
+        "time": "2025-12-16T09:20:00Z",
+        "sent": true,
+        "read": true
+      }
+    ],
+    "pt1": [
+      {
+        "id": "m35",
         "from": "pt1",
         "to": "me",
-        "text": "Patient progress looking good",
-        "time": "2025-12-15T10:15:00Z",
+        "text": "Good morning! I've compiled the weekly progress reports for all stroke patients.",
+        "time": "2025-12-16T10:00:00Z",
+        "sent": true,
+        "read": true
+      },
+      {
+        "id": "m36",
+        "from": "me",
+        "to": "pt1",
+        "text": "Thanks Sarah. Any patients showing exceptional improvement or concerns?",
+        "time": "2025-12-16T10:10:00Z",
+        "sent": true,
+        "read": true
+      },
+      {
+        "id": "m37",
+        "from": "pt1",
+        "to": "me",
+        "text": "Patient progress reports are ready. Mrs. Tan and Mr. Okonkwo are exceeding expectations.",
+        "time": "2025-12-16T10:15:00Z",
         "sent": true,
         "read": true
       }
     ],
     "pt2": [
       {
-        "id": "m16",
+        "id": "m38",
         "from": "pt2",
         "to": "me",
-        "text": "Don't forget about the team meeting at 2 PM today.",
-        "time": "2025-12-15T06:50:00Z",
+        "text": "I've been reviewing the latest research on neuroplasticity-based interventions.",
+        "time": "2025-12-16T06:45:00Z",
         "sent": true,
         "read": false
       },
       {
-        "id": "m17",
+        "id": "m39",
         "from": "me",
         "to": "pt2",
-        "text": "Thanks for the reminder! I'll be there.",
-        "time": "2025-12-15T06:55:00Z",
+        "text": "That sounds interesting, Michael. What have you found?",
+        "time": "2025-12-16T06:50:00Z",
         "sent": true,
         "read": true
       },
       {
-        "id": "m18",
+        "id": "m40",
         "from": "pt2",
         "to": "me",
-        "text": "See you at the meeting",
-        "time": "2025-12-15T07:00:00Z",
+        "text": "There's a new protocol for stroke recovery that shows 40% faster motor function recovery.",
+        "time": "2025-12-16T07:00:00Z",
         "sent": true,
         "read": false
       }
     ],
     "pt3": [
       {
-        "id": "m19",
+        "id": "m41",
         "from": "pt3",
         "to": "me",
-        "text": "I've prepared a new treatment plan for Mrs. Santos.",
-        "time": "2025-12-14T16:40:00Z",
+        "text": "I completed the ADL assessment for Mrs. Santos today.",
+        "time": "2025-12-15T16:30:00Z",
         "sent": true,
         "read": true
       },
       {
-        "id": "m20",
+        "id": "m42",
+        "from": "me",
+        "to": "pt3",
+        "text": "How did she perform on the daily living activities?",
+        "time": "2025-12-15T16:40:00Z",
+        "sent": true,
+        "read": true
+      },
+      {
+        "id": "m43",
         "from": "pt3",
         "to": "me",
-        "text": "New treatment plan attached",
-        "time": "2025-12-14T16:45:00Z",
+        "text": "ADL assessment completed for Mrs. Santos - she's now independent in 6 out of 8 categories!",
+        "time": "2025-12-15T16:45:00Z",
+        "sent": true,
+        "read": true
+      }
+    ],
+    "pt4": [
+      {
+        "id": "m44",
+        "from": "pt4",
+        "to": "me",
+        "text": "I've updated Mr. Williams' speech therapy plan based on his progress.",
+        "time": "2025-12-16T08:15:00Z",
+        "sent": true,
+        "read": true
+      },
+      {
+        "id": "m45",
+        "from": "me",
+        "to": "pt4",
+        "text": "What modifications did you make to the treatment approach?",
+        "time": "2025-12-16T08:25:00Z",
+        "sent": true,
+        "read": true
+      },
+      {
+        "id": "m46",
+        "from": "pt4",
+        "to": "me",
+        "text": "Aphasia treatment plan updated - adding melodic intonation therapy for better outcomes.",
+        "time": "2025-12-16T08:30:00Z",
+        "sent": true,
+        "read": false
+      }
+    ],
+    "pt5": [
+      {
+        "id": "m47",
+        "from": "pt5",
+        "to": "me",
+        "text": "Just finished the gait analysis for Mr. Mitchell.",
+        "time": "2025-12-15T15:00:00Z",
+        "sent": true,
+        "read": true
+      },
+      {
+        "id": "m48",
+        "from": "me",
+        "to": "pt5",
+        "text": "What does the data show about his walking pattern?",
+        "time": "2025-12-15T15:10:00Z",
+        "sent": true,
+        "read": true
+      },
+      {
+        "id": "m49",
+        "from": "pt5",
+        "to": "me",
+        "text": "Gait analysis results look promising - stride length improved by 25% since last month.",
+        "time": "2025-12-15T15:20:00Z",
+        "sent": true,
+        "read": true
+      }
+    ],
+    "pt6": [
+      {
+        "id": "m50",
+        "from": "pt6",
+        "to": "me",
+        "text": "I need to schedule a comprehensive memory assessment for Mr. Kumar.",
+        "time": "2025-12-16T09:40:00Z",
+        "sent": true,
+        "read": false
+      },
+      {
+        "id": "m51",
+        "from": "me",
+        "to": "pt6",
+        "text": "Good idea. When are you planning to conduct it?",
+        "time": "2025-12-16T09:45:00Z",
+        "sent": true,
+        "read": true
+      },
+      {
+        "id": "m52",
+        "from": "pt6",
+        "to": "me",
+        "text": "Memory assessment scheduled for Monday at 10 AM. Will you be available to review results?",
+        "time": "2025-12-16T09:50:00Z",
+        "sent": true,
+        "read": false
+      }
+    ],
+    "pt7": [
+      {
+        "id": "m53",
+        "from": "pt7",
+        "to": "me",
+        "text": "I've designed a custom resting splint for Mr. Chen's affected hand.",
+        "time": "2025-12-15T14:15:00Z",
+        "sent": true,
+        "read": true
+      },
+      {
+        "id": "m54",
+        "from": "me",
+        "to": "pt7",
+        "text": "That's great initiative, Rachel. What features does it have?",
+        "time": "2025-12-15T14:25:00Z",
+        "sent": true,
+        "read": true
+      },
+      {
+        "id": "m55",
+        "from": "pt7",
+        "to": "me",
+        "text": "New splint design for Mr. Chen - includes adjustable finger separators to prevent contractures.",
+        "time": "2025-12-15T14:30:00Z",
+        "sent": true,
+        "read": true
+      }
+    ],
+    "pt8": [
+      {
+        "id": "m56",
+        "from": "pt8",
+        "to": "me",
+        "text": "The vestibular rehabilitation protocol for Mrs. Tan is showing great results.",
+        "time": "2025-12-16T11:10:00Z",
+        "sent": true,
+        "read": true
+      },
+      {
+        "id": "m57",
+        "from": "me",
+        "to": "pt8",
+        "text": "What improvements have you observed in her balance?",
+        "time": "2025-12-16T11:15:00Z",
+        "sent": true,
+        "read": true
+      },
+      {
+        "id": "m58",
+        "from": "pt8",
+        "to": "me",
+        "text": "Vestibular therapy showing results - her Berg Balance score improved from 32 to 45.",
+        "time": "2025-12-16T11:20:00Z",
+        "sent": true,
+        "read": true
+      }
+    ],
+    "pt9": [
+      {
+        "id": "m59",
+        "from": "pt9",
+        "to": "me",
+        "text": "We need to reschedule Mrs. Park's hydrotherapy session due to pool maintenance.",
+        "time": "2025-12-15T16:45:00Z",
+        "sent": true,
+        "read": true
+      },
+      {
+        "id": "m60",
+        "from": "me",
+        "to": "pt9",
+        "text": "I understand. When is the next available slot?",
+        "time": "2025-12-15T16:55:00Z",
+        "sent": true,
+        "read": true
+      },
+      {
+        "id": "m61",
+        "from": "pt9",
+        "to": "me",
+        "text": "Pool session rescheduled to Thursday at 2 PM. The warm water exercises are crucial for her recovery.",
+        "time": "2025-12-15T17:00:00Z",
+        "sent": true,
+        "read": false
+      }
+    ],
+    "pt10": [
+      {
+        "id": "m62",
+        "from": "pt10",
+        "to": "me",
+        "text": "I've updated the TENS therapy protocol for post-stroke shoulder pain management.",
+        "time": "2025-12-16T07:45:00Z",
+        "sent": true,
+        "read": true
+      },
+      {
+        "id": "m63",
+        "from": "me",
+        "to": "pt10",
+        "text": "What parameters did you adjust in the new protocol?",
+        "time": "2025-12-16T07:55:00Z",
+        "sent": true,
+        "read": true
+      },
+      {
+        "id": "m64",
+        "from": "pt10",
+        "to": "me",
+        "text": "TENS unit protocol updated - using low-frequency setting for better muscle relaxation in hemiplegic shoulders.",
+        "time": "2025-12-16T08:00:00Z",
         "sent": true,
         "read": true
       }
