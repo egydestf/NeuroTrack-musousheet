@@ -22,7 +22,7 @@ app = Flask(__name__, static_folder='assets', template_folder='pages')
 # Enable CORS for frontend integration
 CORS(app, resources={
     r"/api/*": {
-        "origins": ["http://localhost:*", "http://127.0.0.1:*"],
+        "origins": ["http://localhost:*", "http://127.0.0.1:*", "https://*.onrender.com"],
         "methods": ["GET", "POST", "OPTIONS"],
         "allow_headers": ["Content-Type"]
     }
@@ -309,7 +309,9 @@ if __name__ == '__main__':
     print("="*70)
     print("NeuroTrack API Server")
     print("="*70)
-    print("Starting server on http://localhost:5000")
+    port = int(os.environ.get('PORT', 5000))
+    debug = os.environ.get('FLASK_ENV') == 'development'
+    print(f"Starting server on port {port}")
     print("\nWeb Interface:")
     print("  http://localhost:5000              - Login page")
     print("  http://localhost:5000/pages/login.html")
@@ -324,6 +326,6 @@ if __name__ == '__main__':
     
     app.run(
         host='0.0.0.0',
-        port=5000,
-        debug=True
+        port=port,
+        debug=debug
     )
